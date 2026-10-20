@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My work | NETW 100 Explore IT &amp; Cyber Careers</title>
+<meta name="description" content="Back up, restore, or delete your NETW 100 work saved in this browser.">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/theme-init.js"></script>
+</head>
+<body class="unit-1" data-page="mywork">
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 24 C10 24 10 8 16 8 S22 24 28 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="4" cy="24" r="3.4" fill="currentColor"/><circle cx="16" cy="8" r="3.4" fill="currentColor"/><circle cx="28" cy="24" r="3.4" fill="currentColor"/></svg><span>NETW 100 <span class="brand-sub">Explore IT &amp; Cyber Careers</span></span></a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Site"><ul><li><a href="index.html">Weeks</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="resources.html">Resources</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="my-work.html" aria-current="page">My work</a></li></ul></nav>
+    <div class="tools">
+      <span class="save-status" id="save-status" aria-live="polite"></span>
+      <button type="button" id="text-smaller" aria-label="Decrease text size">A−</button>
+      <button type="button" id="text-larger" aria-label="Increase text size">A+</button>
+      <button type="button" id="theme-btn">Theme: auto</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="page">
+<h1>My work</h1>
+<div class="prose">
+<p class="lede">Your answers, activity results, and portfolio are saved only in this browser, on this device. Nothing is sent anywhere.</p>
+<p>That keeps your work private, but it stays behind if you switch computers, clear your browser data, or open the course inside Canvas instead of directly. A backup file solves all three: download one each week, keep it somewhere safe such as OneDrive, and restore it wherever you need it.</p>
+</div>
+<h2>What is saved in this browser</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Week</th><th scope="col">Parts marked done</th><th scope="col">Written answers</th><th scope="col">Activities started</th></tr></thead><tbody id="mw-rows"></tbody></table></div>
+<div class="cols cols-3" style="margin-top:1.5rem">
+<section class="panel" aria-labelledby="mw-b"><h2 id="mw-b" style="margin-top:0">Back up</h2><p>Download one file with everything.</p><button type="button" class="btn btn-primary" id="mw-backup">Download my backup</button></section>
+<section class="panel" aria-labelledby="mw-r"><h2 id="mw-r" style="margin-top:0">Restore</h2>
+<div class="field"><label for="mw-file">Backup file</label><input type="file" id="mw-file" accept=".json,application/json"></div>
+<fieldset style="border:0;padding:0;margin:0 0 .6rem"><legend class="small">How to restore</legend>
+<label class="small" style="display:block"><input type="radio" name="mw-mode" value="merge" checked> Merge with what is here (the backup wins where both have the same item)</label>
+<label class="small" style="display:block"><input type="radio" name="mw-mode" value="replace"> Replace everything here with the backup</label></fieldset>
+<button type="button" class="btn" id="mw-restore">Restore from backup</button></section>
+<section class="panel" aria-labelledby="mw-d"><h2 id="mw-d" style="margin-top:0">Delete</h2><p>Remove all course data from this browser, for example on a library computer.</p>
+<button type="button" class="btn" id="mw-delete">Delete all my course data</button>
+<button type="button" class="btn" id="mw-delete-confirm" hidden>Yes, delete everything</button></section>
+</div>
+<p class="act-status" id="mw-msg" aria-live="polite"></p>
+</main>
+<footer class="site-foot">
+  <p>Built for NETW 100 Explore IT &amp; Cyber Careers, Brookdale Community College, 2026. Original open educational resource.</p>
+  <p>Your answers are saved only in this browser on this device. Links were last checked October 2026; salary and job data change, so always check the live source.</p>
+</footer>
+<div id="print-root"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
